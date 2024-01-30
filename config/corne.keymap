@@ -109,18 +109,6 @@
                         bindings = <&kp PG_UP>;
                         layers = <0 1 2 3>;
                 };
-                combo_pgdown2 {
-                        timeout-ms = <50>;
-                        key-positions = <26 27>;
-                        bindings = <&kp PG_DOWN>;
-                        layers = <0 1 2 3>;
-                };
-                combo_pgdown1 {
-                        timeout-ms = <50>;
-                        key-positions = <27 28>;
-                        bindings = <&kp PG_DOWN>;
-                        layers = <0 1 2 3>;
-                };
         };
 };
 
