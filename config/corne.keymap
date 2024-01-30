@@ -14,6 +14,132 @@
     chain-length = <27>;
     // 21 backlight + 6 glowlight
 };
+/ {
+        combos {
+                compatible = "zmk,combos";
+
+                combo_1 {
+                        timeout-ms = <50>;
+                        key-positions = <0 1>;
+                        bindings = <&kp N1>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_2 {
+                        timeout-ms = <50>;
+                        key-positions = <1 2>;
+                        bindings = <&kp N2>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_3 {
+                        timeout-ms = <50>;
+                        key-positions = <2 3>;
+                        bindings = <&kp N3>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_4 {
+                        timeout-ms = <50>;
+                        key-positions = <3 4>;
+                        bindings = <&kp N4>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_5 {
+                        timeout-ms = <50>;
+                        key-positions = <4 5>;
+                        bindings = <&kp N5>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_6 {
+                        timeout-ms = <50>;
+                        key-positions = <6 7>;
+                        bindings = <&kp N6>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_7 {
+                        timeout-ms = <50>;
+                        key-positions = <7 8>;
+                        bindings = <&kp N7>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_8 {
+                        timeout-ms = <50>;
+                        key-positions = <8 9>;
+                        bindings = <&kp N8>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_9 {
+                        timeout-ms = <50>;
+                        key-positions = <9 10>;
+                        bindings = <&kp N9>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_0 {
+                        timeout-ms = <50>;
+                        key-positions = <10 11>;
+                        bindings = <&kp N0>;
+                        layers = <0 1 2 3>;
+                };
+
+
+                combo_up {
+                        timeout-ms = <50>;
+                        key-positions = <14 16>;
+                        bindings = <&kp UP>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_down {
+                        timeout-ms = <50>;
+                        key-positions = <26 28>;
+                        bindings = <&kp DOWN>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_left {
+                        timeout-ms = <50>;
+                        key-positions = <14 15>;
+                        bindings = <&kp LEFT>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_right {
+                        timeout-ms = <50>;
+                        key-positions = <15 16>;
+                        bindings = <&kp RIGHT>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_pgup {
+                        timeout-ms = <50>;
+                        key-positions = <2 4>;
+                        bindings = <&kp PG_UP>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_pgdown2 {
+                        timeout-ms = <50>;
+                        key-positions = <26 27>;
+                        bindings = <&kp PG_DOWN>;
+                        layers = <0 1 2 3>;
+                };
+
+                combo_pgdown1 {
+                        timeout-ms = <50>;
+                        key-positions = <27 28>;
+                        bindings = <&kp PG_DOWN>;
+                        layers = <0 1 2 3>;
+                };
+        };
+};
+
 
 / {
         keymap {
@@ -22,16 +148,16 @@
                 default_layer {
                         label = "BASE";
                                 // -----------------------------------------------------------------------------------------
-                                // | TAB  |  Q  |  W  |  E  |  R  |  T  | _________ |  Y  |  U   |  I  |  O  |  P  | BKSP |
-                                // | SHFT |  A  |  S  |  D  |  F  |  G  | _________ |  H  |  J   |  K  |  L  |  ;  |  '   |
-                                // | CTRL |  Z  |  X  |  C  |  V  |  B  | _________ |  N  |  M   |  ,  |  .  |  /  | ESC  |
-                                //                    | GUI | LWR | SPC | _________ | ENT | RSE  | ALT |
+                                // | ESC  |  Q  |  W  |  F  |  P  |  B  | _________ |  J  |  L   |  U  |  Y  |  ;  |  =  |
+                                // | BKSP |  A  |  R  |  S  |  T  |  G  | _________ |  M  |  N   |  E  |  I  |  O  |  '  |
+                                // | SHFT |  Z  |  X  |  C  |  D  |  V  | _________ |  K  |  H   |  ,  |  .  |  /  |  `  |
+                                //                    | CRL | SPC | GUI | _________ | ENT | SPC  | ALT |
 
                         bindings = <
-                                &kp TAB    &kp Q   &kp W     &kp E      &kp R &kp T         &kp Y    &kp U      &kp I      &kp O    &kp P     &kp BSPC
-                                &kp LSHFT  &kp A   &kp S     &kp D      &kp F &kp G         &kp H    &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-                                &kp LCTRL  &kp Z   &kp X     &kp C      &kp V &kp B         &kp N    &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                                                   &kp LGUI  &mo LOWER  &kp SPACE           &kp RET  &mo RAISE  &kp RALT
+                                &kp ESC    &kp Q  &kp W     &kp F      &kp P &kp B         &kp J    &kp L      &kp U      &kp Y    &kp SEMI  &kp EQUAL
+                                &kp BSPC   &kp A  &kp R     &kp S      &kp T &kp G         &kp M    &kp N      &kp E      &kp I    &kp O     &kp SQT
+                                &kp LSHFT  &kp Z  &kp X     &kp O      &kp D &kp V         &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp GRAVE
+                                                  &kp LGUI  &kp SPACE  &kp LGUI            &kp RET  &kp SPACE  &kp RALT
                         >;
                 };
 
