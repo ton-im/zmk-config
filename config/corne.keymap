@@ -79,43 +79,43 @@
                         layers = <0 1 2 3>;
                 };
 
-                combo_0 {
+                combo_pipe {
                         timeout-ms = <50>;
                         key-positions = <5 6>;
                         bindings = <&kp PIPE>;
                         layers = <0 1 2 3>;
                 };
-                combo_0 {
+                combo_minur {
                         timeout-ms = <50>;
                         key-positions = <17 18>;
                         bindings = <&kp MINUS>;
                         layers = <0 1 2 3>;
                 };
-                combo_0 {
+                combo_under {
                         timeout-ms = <50>;
                         key-positions = <29 30>;
                         bindings = <&kp UNDER>;
                         layers = <0 1 2 3>;
                 };
-                combo_0 {
+                combo_lpar {
                         timeout-ms = <50>;
                         key-positions = <16 17>;
                         bindings = <&mt LT LPAR>;
                         layers = <0 1 2 3>;
                 };
-                combo_0 {
+                combo_rpar {
                         timeout-ms = <50>;
                         key-positions = <18 19>;
                         bindings = <&mt GT RPAR>;
                         layers = <0 1 2 3>;
                 };
-                combo_0 {
+                combo_lbrc {
                         timeout-ms = <50>;
                         key-positions = <28 29>;
                         bindings = <&mt LBKT LBRC>;
                         layers = <0 1 2 3>;
                 };
-                combo_0 {
+                combo_rbrc {
                         timeout-ms = <50>;
                         key-positions = <30 31>;
                         bindings = <&mt RBKT RBRC>;
