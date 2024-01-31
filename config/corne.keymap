@@ -79,6 +79,49 @@
                         layers = <0 1 2 3>;
                 };
 
+                combo_0 {
+                        timeout-ms = <50>;
+                        key-positions = <5 6>;
+                        bindings = <&kp PIPE>;
+                        layers = <0 1 2 3>;
+                };
+                combo_0 {
+                        timeout-ms = <50>;
+                        key-positions = <17 18>;
+                        bindings = <&kp MINUS>;
+                        layers = <0 1 2 3>;
+                };
+                combo_0 {
+                        timeout-ms = <50>;
+                        key-positions = <29 30>;
+                        bindings = <&kp UNDER>;
+                        layers = <0 1 2 3>;
+                };
+                combo_0 {
+                        timeout-ms = <50>;
+                        key-positions = <16 17>;
+                        bindings = <&mt LT LPAR>;
+                        layers = <0 1 2 3>;
+                };
+                combo_0 {
+                        timeout-ms = <50>;
+                        key-positions = <18 19>;
+                        bindings = <&mt GT RPAR>;
+                        layers = <0 1 2 3>;
+                };
+                combo_0 {
+                        timeout-ms = <50>;
+                        key-positions = <28 29>;
+                        bindings = <&mt LBKT LBRC>;
+                        layers = <0 1 2 3>;
+                };
+                combo_0 {
+                        timeout-ms = <50>;
+                        key-positions = <30 31>;
+                        bindings = <&mt RBKT RBRC>;
+                        layers = <0 1 2 3>;
+                };
+
                 combo_up {
                         timeout-ms = <50>;
                         key-positions = <14 16>;
@@ -109,11 +152,43 @@
                         bindings = <&kp PG_UP>;
                         layers = <0 1 2 3>;
                 };
+                combo_pg_dn_1 {
+                        timeout-ms = <50>;
+                        key-positions = <26 27>;
+                        bindings = <&kp PG_DN>;
+                        layers = <0 1 2 3>;
+                };
+                combo_pg_dn_2 {
+                        timeout-ms = <50>;
+                        key-positions = <27 28>;
+                        bindings = <&kp PG_DN>;
+                        layers = <0 1 2 3>;
+                };
+                combo_home {
+                        timeout-ms = <50>;
+                        key-positions = <2 3 4>;
+                        bindings = <&kp HOME>;
+                        layers = <0 1 2 3>;
+                };
+                combo_end {
+                        timeout-ms = <50>;
+                        key-positions = <26 27 28>;
+                        bindings = <&kp END>;
+                        layers = <0 1 2 3>;
+                };
         };
 };
 
 
 / {
+        behaviors {
+                td0: tap_dance_0 {
+                        compatible = "zmk,behavior-tap-dance";
+                        #binding-cells = <0>;
+                        tapping-term-ms = <200>;
+                        bindings = <&kp LSHFT>, <&kp LSHFT>, <&kp CAPSLOCK>;
+                };
+        };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -128,8 +203,8 @@
                         bindings = <
                                 &kp ESC    &kp Q  &kp W     &kp F      &kp P &kp B         &kp J    &kp L      &kp U      &kp Y    &kp SEMI  &kp EQUAL
                                 &kp BSPC   &kp A  &kp R     &kp S      &kp T &kp G         &kp M    &kp N      &kp E      &kp I    &kp O     &kp SQT
-                                &kp LSHFT  &kp Z  &kp X     &kp O      &kp D &kp V         &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp GRAVE
-                                                  &kp LGUI  &kp SPACE  &kp LGUI            &kp RET  &kp SPACE  &kp RALT
+                                &td0       &kp Z  &kp X     &kp C      &kp D &kp V         &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp GRAVE
+                                                  &kp LCTRL &kp SPACE  &kp LGUI            &kp RET  &kp SPACE  &kp RALT
                         >;
                 };
 
