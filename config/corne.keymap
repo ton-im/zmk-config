@@ -183,6 +183,12 @@
                         key-positions = <26 27 28>;
                         bindings = <&kp END>;
                         layers = <0>;
+
+                combo_sys {
+                        timeout-ms = <50>;
+                        key-positions = <36 37 38>;
+                        bindings = <&mo SYSTEM>;
+                        layers = <0>;
                 };
         };
 };
@@ -255,7 +261,7 @@
                                 // | SHFT |      |      |       |       |            | _________ |     |     |     |     | RGB_ON |  RGB_OFF   |
                                 //                      | GUI   |       | SPC        | _________ | ENT |  EP_ON  | EP_OFF |
                         bindings = <
-                                &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4               &rgb_ug RGB_HUI   &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &trans  &trans          &trans
+                                &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4               &rgb_ug RGB_HUI   &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &trans  &ext_power EP_ON          &ext_power EP_OFF
                                 &kp LCTRL   &kp C_PREV    &kp C_NEXT    &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PP                   &rgb_ug RGB_SAI   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans  &trans          &trans
                                 &kp LSHFT   &out OUT_TOG  &out OUT_USB  &out OUT_BLE   &trans        &trans                     &rgb_ug RGB_SPI   &rgb_ug RGB_SPD  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_ON  &rgb_ug RGB_OFF
                                                                         &kp LGUI       &trans         &kp SPACE                 &kp RET  &trans  &trans
