@@ -211,8 +211,8 @@
                         bindings = <
                                 &kp ESC    &kp Q  &kp W     &kp F      &kp P &kp B         &kp J    &kp L      &kp U      &kp Y    &kp SEMI  &kp EQUAL
                                 &kp BSPC   &kp A  &kp R     &kp S      &kp T &kp G         &kp M    &kp N      &kp E      &kp I    &kp O     &kp SQT
-                                &td0       &kp Z  &kp X     &kp C      &kp D &kp V         &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &kp GRAVE
-                                                  &kp LCTRL &kp SPACE  &kp LGUI            &kp RET  &kp SPACE  &kp RALT
+                                &td0       &kp Z  &kp X     &kp C      &kp D &kp V         &kp K    &kp H      &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT GRAVE
+                                                  &kp LCTRL &kp SPACE  &mt LGUI TAB        &kp RET  &kp SPACE  &kp RALT
                         >;
                 };
 
