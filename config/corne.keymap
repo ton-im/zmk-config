@@ -183,6 +183,7 @@
                         key-positions = <26 27 28>;
                         bindings = <&kp END>;
                         layers = <0>;
+                };
 
                 combo_sys {
                         timeout-ms = <50>;
