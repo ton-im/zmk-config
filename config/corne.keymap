@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <../boards/arm/nrfmicro/nrfmicro-pinctrl.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
@@ -128,6 +127,19 @@
                         timeout-ms = <50>;
                         key-positions = <30 31>;
                         bindings = <&mt RBKT RBRC>;
+                        layers = <0>;
+                };
+
+                combo_blsh {
+                        timeout-ms = <50>;
+                        key-positions = <15 28>;
+                        bindings = <&kp BSLH>;
+                        layers = <0>;
+                };
+                combo_fslh {
+                        timeout-ms = <50>;
+                        key-positions = <20 31>;
+                        bindings = <&kp FSLH>;
                         layers = <0>;
                 };
 
